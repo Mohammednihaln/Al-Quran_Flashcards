@@ -1,0 +1,21 @@
+/* App component styles */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-md);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.flashcard-container {
+  flex: 1;
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Mobile-first responsive design */
+@media (min-width: 768px) {
+  .app {
+    padding: var(--spacing-xl);
+  }
+}

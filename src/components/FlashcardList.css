@@ -1,0 +1,58 @@
+/* FlashcardList component styles */
+.flashcard-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.flashcard-item {
+  opacity: 0;
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.flashcard-list-empty {
+  text-align: center;
+  padding: var(--spacing-xl);
+  color: var(--color-text-light);
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.flashcard-list-empty p {
+  margin: 0;
+  font-size: var(--font-size-md);
+}
+
+/* Responsive grid - 2 columns on tablet */
+@media (min-width: 600px) {
+  .flashcard-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 3 columns on desktop */
+@media (min-width: 900px) {
+  .flashcard-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* 4 columns on large screens */
+@media (min-width: 1200px) {
+  .flashcard-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

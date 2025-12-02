@@ -1,0 +1,73 @@
+/* AyahDisplay component styles - Dynamic gradient with white text */
+.ayah-display {
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  padding: var(--spacing-xl);
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+  color: #ffffff;
+}
+
+.ayah-reference-badge {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  opacity: 0.9;
+  margin-bottom: var(--spacing-md);
+  padding: var(--spacing-xs) var(--spacing-md);
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+}
+
+.ayah-arabic-text {
+  font-family: var(--font-family-arabic);
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1.8;
+  margin: 0 0 var(--spacing-lg) 0;
+  direction: rtl;
+  text-align: center;
+  /* White text with dark outline and shadows for visibility */
+  color: #ffffff;
+  text-shadow: 
+    /* Dark outline effect */
+    -1px -1px 0 rgba(0, 0, 0, 0.5),
+    1px -1px 0 rgba(0, 0, 0, 0.5),
+    -1px 1px 0 rgba(0, 0, 0, 0.5),
+    1px 1px 0 rgba(0, 0, 0, 0.5),
+    /* Soft glow */
+    0px 0px 8px rgba(0, 0, 0, 0.4),
+    0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.ayah-translation {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.7;
+  margin: 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .ayah-display {
+    padding: var(--spacing-xl) calc(var(--spacing-xl) * 2);
+  }
+  
+  .ayah-arabic-text {
+    font-size: 2.8rem;
+  }
+  
+  .ayah-translation {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ayah-arabic-text {
+    font-size: 3.2rem;
+  }
+}

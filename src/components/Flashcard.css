@@ -1,0 +1,94 @@
+/* Flashcard component styles */
+.flashcard {
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flashcard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.flashcard-content {
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  min-height: 180px;
+}
+
+.arabic-text {
+  font-family: var(--font-family-arabic);
+  font-size: var(--font-size-arabic);
+  font-weight: 400;
+  margin-bottom: var(--spacing-md);
+  line-height: 1.4;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.transliteration {
+  font-size: var(--font-size-lg);
+  font-style: italic;
+  opacity: 0.95;
+  margin-bottom: var(--spacing-sm);
+}
+
+.meaning {
+  font-size: var(--font-size-md);
+  opacity: 0.9;
+  margin-bottom: var(--spacing-md);
+}
+
+.audio-button {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.audio-button:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
+
+.audio-button:disabled {
+  cursor: default;
+}
+
+.audio-button.playing {
+  animation: pulse 1s ease-in-out infinite;
+}
+
+.audio-icon {
+  font-size: 1.25rem;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@media (min-width: 768px) {
+  .flashcard-content {
+    padding: var(--spacing-xl);
+    min-height: 200px;
+  }
+  
+  .arabic-text {
+    font-size: 2.5rem;
+  }
+}
