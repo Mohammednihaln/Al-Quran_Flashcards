@@ -1,6 +1,6 @@
-# Quran Flashcards
+# Al-Quran Flashcards
 
-A React application for generating beautiful flashcards from Quran verses. Enter any ayah reference and get a visually appealing display of the Arabic text with translation, ready to export as an image or PDF.
+A React application for generating beautiful flashcards from Quran verses. Enter any ayah reference and get a visually appealing display of the Arabic text with translation, ready to export as an image or PDF. Created by the use of "kiro" ide.
 
 ## Features
 
@@ -38,7 +38,7 @@ The app will be available at `http://localhost:5173`
 1. Enter an ayah reference in the input field:
    - Numeric format: `2:255` (Surah 2, Ayah 255)
    - Name format: `al-baqarah 255`
-2. Click "Generate" to fetch and display the verse
+2. Click "Generate" to fetch and display the verse with English meaning as colourful Flashcards
 3. Use the export buttons to save as PNG or PDF
 
 ## Scripts
@@ -75,6 +75,5 @@ src/
 
 This app uses the [Quran.com API](https://quran.com) to fetch verse data including Arabic text, translations, and word-by-word breakdowns.
 
-## License
+##Thankyou all , put a star for this wonderful creative project.
 
-MIT
