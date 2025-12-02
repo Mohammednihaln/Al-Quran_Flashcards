@@ -75,5 +75,5 @@ src/
 
 This app uses the [Quran.com API](https://quran.com) to fetch verse data including Arabic text, translations, and word-by-word breakdowns.
 
-##Thankyou all , put a star for this wonderful creative project.
+## Thankyou all , put a star for this wonderful creative project.
 
